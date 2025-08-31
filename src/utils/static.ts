@@ -7,7 +7,7 @@ export   const categories = [
   ];
 
   export const contactAddress=[
-    {email:"assessment@shell.website", phone:"+23490 0904 4904", address:"address for home and address for office "}
+    {email:"assessment@shell.website", phone:"+23490 0904 4904", address:"suit 123 apex road west avenue "}
   ]
 
   export const About=" We are building a new model for recruitment. One that combines revenue sharing, a marketing engine, a competitive broker community, and an AI-driven learning platform. This is recruitment rewritten for the modern era."
