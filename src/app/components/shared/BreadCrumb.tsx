@@ -19,37 +19,41 @@ export default function Breadcrumb({
   };
 
   return (
-    <div
-      className="relative w-full h-64 bg-cover bg-center"
-      style={{
-        backgroundImage: "url(" + featuredImage + ")",
-      }}
-    >
-      <div className="absolute inset-0  " />
-      <div className="relative container mx-auto px-4 h-full flex items-center">
-        <nav className="flex items-center space-x-2 text-white">
-          <Link href="/" className="hover:text-gray-300 transition-colors">
-            Home
-          </Link>
-          {segments.map((segment, index) => (
-            <div key={segment} className="flex items-center">
-              <span className="mx-2">/</span>
-              {index === segments.length - 1 ? (
-                <span className="font-semibold">
-                  {getBreadcrumbName(segment)}
-                </span>
-              ) : (
-                <Link
-                  href={`/${segments.slice(0, index + 1).join("/")}`}
-                  className="hover:text-gray-300 transition-colors"
-                >
-                  {getBreadcrumbName(segment)}
-                </Link>
-              )}
-            </div>
-          ))}
-        </nav>
-      </div>
-    </div>
+   <div
+  className="relative w-full h-64 bg-cover bg-center"
+  style={{
+    backgroundImage: `url(${featuredImage})`,
+  }}
+>
+  {/* Overlay to dim */}
+  <div className="absolute inset-0 bg-black/50" />
+
+  {/* Breadcrumb content */}
+  <div className="relative container mx-auto px-4 h-full flex items-center">
+    <nav className="flex items-center space-x-2 text-white">
+      <Link href="/" className="hover:text-gray-300 transition-colors">
+        Home
+      </Link>
+      {segments.map((segment, index) => (
+        <div key={segment} className="flex items-center">
+          <span className="mx-2">/</span>
+          {index === segments.length - 1 ? (
+            <span className="font-semibold">
+              {getBreadcrumbName(segment)}
+            </span>
+          ) : (
+            <Link
+              href={`/${segments.slice(0, index + 1).join("/")}`}
+              className="hover:text-gray-300 transition-colors"
+            >
+              {getBreadcrumbName(segment)}
+            </Link>
+          )}
+        </div>
+      ))}
+    </nav>
+  </div>
+</div>
+
   );
 }
