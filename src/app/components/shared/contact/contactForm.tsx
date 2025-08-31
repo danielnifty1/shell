@@ -80,7 +80,7 @@ toast.success("sent")
               type="submit"
               className="cursor-pointer w-full bg-blue-500 text-black px-4 py-2 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-center gap-2"
             >
-              Send Message{" "}
+              Send Message <span className="fa fa-spin fa-spinner"></span>
               {loading ? (
                 <div className="flex items-center justify-center">
                   <Loader2 className="animate-spin h-4 w-4 mr-2" />
