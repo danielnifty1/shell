@@ -25,63 +25,24 @@ const ContactInfo: React.FC = () => {
         contactAddress.map((contact)=>(
             <div key={contact.phone} className="space-y-4">
             <div className="flex items-center space-x-4">
-              <span className="text-primary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16.88 3.549A9.956 9.956 0 0112 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10c0-1.657-.402-3.22-1.12-4.599M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
+              <span className="text-primary fa fa-globe">
+               
               </span>
               <p className="text-gray-600">
                 <strong>Address:</strong> {contact.address}
               </p>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="text-primary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 10l1.664 1.664a4.5 4.5 0 006.364 0L12 10m0 0l1.664 1.664a4.5 4.5 0 006.364 0L21 10m-9 0v10"
-                  />
-                </svg>
+              <span className="text-primary fa fa-phone">
+               
               </span>
               <p className="text-gray-600">
                 <strong>Phone:</strong> {contact.phone}
               </p>
             </div>
             <div className="flex items-center space-x-4">
-              <span className="text-primary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 12H8m0 0l4-4m-4 4l4 4"
-                  />
-                </svg>
+              <span className="text-primary fa fa-envelope">
+                
               </span>
               <p className="text-gray-600">
                 <strong>Email:</strong> {contact.email}
