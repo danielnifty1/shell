@@ -78,7 +78,7 @@ toast.success("sent")
           <div>
             <Button
               type="submit"
-              className="cursor-pointer w-full bg-blue-500 text-black px-4 py-2 rounded-md hover:bg-blue-600 transition-colors flex items-center justify-center gap-2"
+              className="cursor-pointer w-full bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors flex items-center justify-center gap-2"
             >
               Send Message 
               {loading ? (
