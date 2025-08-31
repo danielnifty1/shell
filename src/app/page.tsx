@@ -15,7 +15,7 @@ export default function Home() {
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 tracking-tight">
             Recruiting Without Limits.
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-gray-600 mb-12">
@@ -43,10 +43,10 @@ export default function Home() {
                 ecosystem where brokers learn from each other and AI insights drive better outcomes.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Real-time Chat</span>
-                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">AI Matching</span>
-                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Analytics Dashboard</span>
-                <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Learning Paths</span>
+                <span className="px-3 py-1 bg-gray-300 text-gray-800 rounded-full text-sm">Real-time Chat</span>
+                <span className="px-3 py-1 bg-gray-300 text-gray-800 rounded-full text-sm">AI Matching</span>
+                <span className="px-3 py-1 bg-gray-300 text-gray-800 rounded-full text-sm">Analytics Dashboard</span>
+                <span className="px-3 py-1 bg-gray-300 text-gray-800 rounded-full text-sm">Learning Paths</span>
               </div>
             </div>
           </div>
